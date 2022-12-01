@@ -13,20 +13,20 @@
         <h2>Állat bekérése</h2>
         <p>
           <label>Név:</label>
-          <input type="text" name="allatNeve"> <br>
+          <input type="text" name="allatNeve" required> <br>
         </p>
     
         <p>
           <label>Életkor:</label>
-          <input type="number" name="eletKora"> <br>
+          <input type="number" name="eletKora" required min="0"> <br>
         </p>
     
         <p>
           <label>Fajta:</label>
-            <select name="allatFajta" id="">
-              <option value="emlo">Emlő</option>
-              <option value="himlo">Hímlő</option>
-              <option value="cseplo">Cséplő</option>
+            <select name="allatFajta" id="" required>
+              <option value="pingvin">Pingvin</option>
+              <option value="ogre">Ogre</option>
+              <option value="madar">Madár</option>
             </select>
         </p>
     
