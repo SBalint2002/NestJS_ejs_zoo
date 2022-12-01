@@ -7,12 +7,31 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="style.css">
     <link rel='stylesheet' type='text/css' media='screen' href='/main.css'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div>
+    <div class="col-sm-4 kozep">
         <p>Állat neve: <%= allatNeve %> </p>
         <p>Életkora: <%= eletKora %></p>
         <p>Állat fajtája: <%= allatFajta %></p>
+        <p><% switch (allatFajta) {
+            case "pingvin" : %>
+                    <img src="/pictures/pingvin.png" width="300px">
+                    <p>A pingvinek különös testalkatú madarak. A legnagyobb pingvinféle 115 centiméter, a legkisebb csak 40 centiméter magas.</p>
+                    <% break;
+            
+            case "ogre" : %>
+                    <img src="/pictures/ogre.jpg" width="300px">
+                    <p>Az ogre szó emberevő félóriást jelent az észak-európai mitológiában. A szó francia eredetű, feltehetően Orcusnak, az alvilág római istenének nevéből származik.</p>
+                    <% break;
+            
+            case "madar" : %>
+                    <img src="/pictures/madar.png" width="300px">
+                    <p>A madarak meszes héjú tojással szaporodó, melegvérű gerinces állatok. Mellső végtagjaik szárnyakká módosultak. Járólábaik vannak, melyeken megtalálható a jellegzetes csüd, amely elősegíti a landolást.</p>
+                    <% break;
+            
+        } %></p>
     </div>
 </body>
 </html>

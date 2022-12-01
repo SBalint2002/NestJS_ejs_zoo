@@ -5,34 +5,38 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Zoo</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/main.css'>
     <script src='main.js'></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </head>
 <body>
-    <form method="post">
-        <h2>Állat bekérése</h2>
-        <p>
-          <label>Név:</label>
-          <input type="text" name="allatNeve" required> <br>
-        </p>
-    
-        <p>
-          <label>Életkor:</label>
-          <input type="number" name="eletKora" required min="0"> <br>
-        </p>
-    
-        <p>
-          <label>Fajta:</label>
-            <select name="allatFajta" id="" required>
-              <option value="pingvin">Pingvin</option>
-              <option value="ogre">Ogre</option>
-              <option value="madar">Madár</option>
-            </select>
-        </p>
-    
-        <p>
-          <input type="submit" value="Feltölt">
-        </p>
-      </form>
+    <div class="col-sm-4 kozep">
+        <form method="post">
+            <h2>Állat bekérése</h2>
+            <p>
+              <label>Név:</label>
+              <input type="text" name="allatNeve" class="form-control" required> <br>
+            </p>
+        
+            <p>
+              <label>Életkor:</label>
+              <input type="number" name="eletKora" class="form-control" required min="0"> <br>
+            </p>
+        
+            <p>
+              <label>Fajta:</label>
+                <select name="allatFajta" id="" required>
+                  <option value="pingvin">Pingvin</option>
+                  <option value="ogre">Ogre</option>
+                  <option value="madar">Madár</option>
+                </select>
+            </p>
+        
+            <p>
+              <input type="submit" value="Feltölt">
+            </p>
+          </form>
+    </div>
 </body>
 </html>
